@@ -1,0 +1,87 @@
+.chat-container {
+    background: #0a192f;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.chat-nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.chat-heading {
+    color: cyan;
+    text-shadow: 0 0 10px cyan;
+}
+
+.messages {
+    width: 100%;
+    max-width: 600px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.message-card {
+    background: #112240;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #0a192f, inset -5px -5px 10px #112240;
+    color: white;
+    max-width: 80%;
+}
+
+.owner {
+    align-self: flex-end;
+    background: cyan;
+    color: black;
+    box-shadow: 0 0 10px cyan;
+}
+
+.send-form {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.send-form input {
+    background: #112240;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: cyan;
+    box-shadow: inset 5px 5px 10px #0a192f, inset -5px -5px 10px #112240;
+}
+
+.send-form input[type="submit"] {
+    background: cyan;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0 0 10px cyan;
+}
+
+
+.back-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+    .glowing {
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        transition: filter 0.3s ease-in-out;
+
+        &:hover {
+            filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+        }
+    }
+}
